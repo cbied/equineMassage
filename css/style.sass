@@ -6,7 +6,9 @@
 /* Global */
 body
     font-family: 'Roboto Slab', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif
-/* NavSection  */
+
+    
+    /* NavSection  */
 div#navbar3.container
     position: fixed
     width: 100%
@@ -29,6 +31,7 @@ ul
     line-height: 1
     display: flex
     position: relative
+    justify-content: center
 li
     list-style: none
     line-height: 1
@@ -58,6 +61,7 @@ a:active
 ul li
 #bg-one, #bg-two, #bg-three, #bg-four
     position: absolute
+    z-index: 99
     bottom: 0
     width: 100%
     border-bottom-left-radius: 3px
@@ -68,7 +72,7 @@ ul li
 #bg-two
     height: 59px
     z-index: 2
-    background: url('images/bg.png')
+    background: url('../images/bg.png')
 #bg-three
     bottom: 4px
     height: 55px
@@ -83,7 +87,7 @@ ul li
     bottom: 4px
     height: 55px
     z-index: 4
-    background: url('images/bg.png')
+    background: url('../images/bg.png')
 .containerNav
     width: 100%
     height: 55px
@@ -115,3 +119,56 @@ ul li
     transform: rotate(45deg) translate(-8px, -8px)
 
 /* NavSection end */
+
+
+/* JumbotronSection 1  */   
+.jumbotron
+    margin-bottom: 0
+.jumbo1
+    background-image: url("../images/horsePics/horse.jpg")
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    color: white
+    font-weight: bold
+    height: 450px
+    padding-top: 100px
+.btn
+    background: $navbarLinkColorActive
+    color: white
+    max-width: 100%
+    
+@media (max-width: 590px)
+    .jumbo1 
+        padding-top: 70px
+    .jumbo1 h1
+        font-size: 1.5rem
+    .jumbo1 p
+        font-size: 1rem
+
+/* JumbotronSection 1 end  */
+
+/* AboutSection end  */
+.about
+    background: $navbarLinkColorHover
+    color: $white
+    padding: 10px 15px
+.aboutImg
+    width: 30%
+    height: 30%
+    border-radius: 15%
+@media (max-width: 675px)
+    .about
+        flex-direction: column
+        h4
+            font-size: 1.3rem
+        p
+            font-size: .9rem
+    .aboutImg
+        align-self: center
+        width: 70%
+        height: 70%
+        
+
+/* AboutSection end  */
