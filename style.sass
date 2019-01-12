@@ -1,0 +1,117 @@
+@import "parcials/_base"
+@import "parcials/_mixins"
+@import "parcials/_normalize"
+@import "parcials/_variables"
+
+/* Global */
+body
+    font-family: 'Roboto Slab', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif
+/* NavSection  */
+div#navbar3.container
+    position: fixed
+    width: 100%
+    padding: 0
+    margin: 0
+    line-height: 0
+@media (min-width: 550px) 
+    div#navbar3.container
+        width: 100%
+        min-width: 100%
+        padding: 0
+        margin: 0
+#cssmenu
+    list-style: none
+    display: block
+    position: relative
+    font-family: Capriola, Helvetica, sans-serif
+ul
+    list-style: none
+    line-height: 1
+    display: flex
+    position: relative
+li
+    list-style: none
+    line-height: 1
+    display: block
+    z-index: 5
+    a
+    padding: 15px 30px 30px 30px
+    font-size: 15px
+span
+    color: white
+    font-weight: bold
+li:hover
+    background: -moz-linear-gradient(top, $navbarLinkColorHover 0%, $navbarLinkColorActive 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $navbarLinkColorHover), color-stop(100%, $navbarLinkColorActive))
+    background: -webkit-linear-gradient(top, $navbarLinkColorHover 0%, $navbarLinkColorActive 100%)
+    background: -o-linear-gradient(top, $navbarLinkColorHover 0%, $navbarLinkColorActive 100%)
+    background: -ms-linear-gradient(top, $navbarLinkColorHover 0%, $navbarLinkColorActive 100%)
+    background: linear-gradient(to bottom, $navbarLinkColorHover 0%, $navbarLinkColorActive 100%)
+a:hover
+    text-decoration: none
+a:active 
+    background: $navbarLinkColorHover
+    a
+    list-style: none
+    font-weight: bold
+/* file.js reference  */    
+ul li
+#bg-one, #bg-two, #bg-three, #bg-four
+    position: absolute
+    bottom: 0
+    width: 100%
+    border-bottom-left-radius: 3px
+    border-bottom-right-radius: 3px
+#bg-one
+    height: 10px
+    background: $navbarLinkColorActive
+#bg-two
+    height: 59px
+    z-index: 2
+    background: url('images/bg.png')
+#bg-three
+    bottom: 4px
+    height: 55px
+    z-index: 3
+    background: -moz-linear-gradient(top, $navBackground 0%, $secondBackground 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $navBackground), color-stop(100%, $secondBackground))
+    background: -webkit-linear-gradient(top, $navBackground 0%, $secondBackground 100%)
+    background: -o-linear-gradient(top, $navBackground 0%, $secondBackground 100%)
+    background: -ms-linear-gradient(top, $navBackground 0%, $secondBackground 100%)
+    background: linear-gradient(to bottom, $navBackground 0%, $secondBackground 100%)
+#bg-four
+    bottom: 4px
+    height: 55px
+    z-index: 4
+    background: url('images/bg.png')
+.containerNav
+    width: 100%
+    height: 55px
+    z-index: 3
+    background: -moz-linear-gradient(top, $navBackground 0%, $secondBackground 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $navBackground), color-stop(100%, $secondBackground))
+    background: -webkit-linear-gradient(top, $navBackground 0%, $secondBackground 100%)
+    background: -o-linear-gradient(top, $navBackground 0%, $secondBackground 100%)
+    background: -ms-linear-gradient(top, $navBackground 0%, $secondBackground 100%)
+    background: linear-gradient(to bottom, $navBackground 0%, $secondBackground 100%)
+    display: none
+    cursor: pointer
+    padding-top: 12px
+.bar1, .bar2, .bar3
+    width: 35px
+    height: 5px
+    background-color: white
+    margin: 6px 0 6px 15px
+    transition: 0.4s
+.bar1
+    margin-top: 0
+.change .bar1 
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px)
+    transform: rotate(-45deg) translate(-9px, 6px)
+.change .bar2 
+    opacity: 0
+.change .bar3 
+    -webkit-transform: rotate(45deg) translate(-8px, -8px)
+    transform: rotate(45deg) translate(-8px, -8px)
+
+/* NavSection end */
