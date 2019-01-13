@@ -21,14 +21,14 @@
   <div class="container" id="navbar3">
   <div id='cssmenu'>
     <ul>
-       <li class='active'><a href='#'><span>Home</span></a></li>
-       <li><a href='#'><span>About Us</span></a></li>
-       <li><a href='#'><span>Services</span></a></li>
-       <li><a href='#'><span>Contact</span></a></li>
+       <li class='active'><a href='#home'><span>Home</span></a></li>
+       <li><a href='#aboutUs'><span>About Us</span></a></li>
+       <li><a href='#services'><span>Services</span></a></li>
+       <li><a href='#contactUs'><span>Contact Us</span></a></li>
     </ul>
     </div>
     <!-- Collapsible content -->
-    <div class="containerNav" onclick="menuChange(this)" data-target="#navbarIcon" data-toggle="collapse">
+    <div class="containerNav" id="cNav" onclick="menuChange(this)" data-target="#navbarIcon" data-toggle="collapse">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -36,18 +36,18 @@
     <div class="collapse navbar-collapse" id="navbarIcon">
 
       <!-- Links -->
-      <ul class="navbar-nav text-center">
+      <ul class="navbar-nav text-center" id="mobleNav">
         <li class="nav-item active bg-dark">
-          <a class="nav-link" href="#"><span>Home</span></a>
+          <a class="nav-link" href="#home"><span>Home</span></a>
         </li>
         <li class="nav-item bg-dark">
-          <a class="nav-link" href="#"><span>About Us</span></a>
+          <a class="nav-link" href="#aboutUs"><span>About Us</span></a>
         </li>
         <li class="nav-item bg-dark">
-          <a class="nav-link" href="#"><span>Services</span></a>
+          <a class="nav-link" href="#services"><span>Services</span></a>
         </li>
         <li class="nav-item bg-dark">
-          <a class="nav-link" href="#"><span>Contact</span></a>
+          <a class="nav-link" href="#contactUs"><span>Contact Us</span></a>
         </li>
       </ul>
     </div>
@@ -55,40 +55,171 @@
     <!-- menu end -->
 
     
+    <!-- main -->
+    
 <!-- jumbotron 1 -->
-<div class="jumbotron text-center jumbo1">
-  <h1 class="display-5 pb-3">Jenni's Equine Massage</h1>
-  <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus perspiciatis cum vitae, modi hic?</p>
-  <hr>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quibusdam.</p>
-  <a class="btn btn-lg mt-5" href="#" role="button">Read More</a>
-</div>
+<section class="jumbotron text-center jumbo1" id="home">
+  <a class="btn btn-lg mt-6" id="aboutUs" href="#" role="button">Jenni's Equine Massage</a>
+</section>
 <!-- jumbotron end -->
 
-    <!-- main -->
-      <!-- misson statement section -->
 
-    <section class="d-flex about">
-      <img src="images/horsePics/jenniAndHorse.JPG" alt="jenni and her horse" class="aboutImg mr-4">
-      <div class="d-flex flex-column justify-content-around">
-      <h4 class="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est autem maxime consectetur doloremque ratione sed!</h4>
-      <p class="aboutText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
-      </div>
-    </section>
-  
-      <!-- picture and about section -->
+  <!-- picture and about section -->
+<section class="d-flex text-center about" >
+  <img src="images/horsePics/jenniAndHorse.JPG" alt="jenni and her horse" class="aboutImg mr-4">
+  <div class="d-flex flex-column justify-content-around">
+  <h4 class="aboutText">Jenni and her Dream</h4>
+  <p class="aboutText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
+  </div>
+</section>
+ <!-- picture and about section end -->
 
-      <!-- Services section --> 
+<!-- jumbotron 2 -->
+<section class="jumbotron jumbo2" id="services">
+</section>
+<!-- jumbotron 2 end -->
 
-      <!-- Contact section -->
+<!-- Services section --> 
+<section class="d-flex text-center about">
+  <div class="d-flex flex-column justify-content-around">
+  <h4 class="xaboutTet">Services</h4>
+  <p class="aboutText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
+  </div>
+</section>
+<!-- Services section end --> 
+
+<!-- jumbotron 3 -->
+<section class="jumbotron jumbo3" id="contactUs">
+</section>
+<!-- jumbotron 3 end -->
+
+<!-- Contact section -->
+<section class="d-flex text-center about">
+  <div class="d-flex flex-column justify-content-around">
+  <h4 class="xaboutTet">Contact Us</h4>
+  <p class="aboutText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
+  </div>
+</section>
+<!-- Contact section end -->
+
+<!-- jumbotron 4 -->
+<section class="jumbotron jumbo4">
+</section>
+<!-- jumbotron 4 end -->
 
     <!-- main end -->
 
 
-    <!-- footer -->
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4">
 
+  <!-- Footer Text -->
+  <div class="container-fluid text-center">
 
-    <!-- footer end -->
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">FAQ</h5>
+        <!-- FAQ ACCORDION -->
+    <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+                Collapse One
+              </a>
+            </h5>
+          </div>
+  
+          <div id="collapse1" class="collapse">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+              aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+              et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+                Collapse Two
+              </a>
+            </h5>
+          </div>
+  
+          <div id="collapse2" class="collapse">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+              aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+              et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+            </div>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-header">
+            <h5>
+              <a href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+                Collapse Three
+              </a>
+            </h5>
+          </div>
+  
+          <div id="collapse3" class="collapse">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
+              aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
+              et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3 align-self-center">
+
+       <!-- Facebook -->
+       <a class="fb-ic">
+          <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <!--Instagram-->
+        <a class="ins-ic">
+          <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+        </a>
+        <!--Pinterest-->
+        <a class="pin-ic">
+          <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+ 
+  <div class="text-center py-3" id="year" ></div>
+  <div class="text-center py-3"><a href="https://cbied.github.io/biedswebdev/" target="_blank" >Chris' Portfolio Site</a></div>
+  
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer end -->
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
@@ -99,7 +230,7 @@
 
   <script>
     // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
+    $('#year').text('Created by Chris Biediger  © Copyright: ' + new Date().getFullYear());
   </script>
   <script src="scripts/file.js"></script>
 </body>

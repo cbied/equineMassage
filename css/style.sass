@@ -15,6 +15,7 @@ div#navbar3.container
     padding: 0
     margin: 0
     line-height: 0
+    z-index: 99
 @media (min-width: 550px) 
     div#navbar3.container
         width: 100%
@@ -121,43 +122,49 @@ ul li
 /* NavSection end */
 
 
-/* JumbotronSection 1  */   
+/* JumbotronSection  */   
 .jumbotron
     margin-bottom: 0
-.jumbo1
-    background-image: url("../images/horsePics/horse.jpg")
+.jumbo1, .jumbo2, .jumbo3, .jumbo4
     background-attachment: fixed
     background-position: center
     background-repeat: no-repeat
     background-size: cover
-    color: white
-    font-weight: bold
+    color: $white
     height: 450px
-    padding-top: 100px
+.jumbo1
+    background-image: url("../images/horsePics/horse.jpg")
+    a
+        margin-top: 15%
+.jumbo2
+    background-image: url("../images/horsePics/horse3.jpg")
+    background-position: top
+.jumbo3
+    background-image: url("../images/horsePics/horseKiss.jpg")
+    background-position: top
+.jumbo4
+    background-image: url("../images/horsePics/horse4.jpg")
+    background-position: center
 .btn
     background: $navbarLinkColorActive
     color: white
     max-width: 100%
     
-@media (max-width: 590px)
-    .jumbo1 
+@media (max-width: 1050px)
+    .jumbo1, .jumbo2
         padding-top: 70px
-    .jumbo1 h1
-        font-size: 1.5rem
-    .jumbo1 p
-        font-size: 1rem
-
-/* JumbotronSection 1 end  */
+    .jumbo1 a
+        margin-top: 25%
+/* JumbotronSection end  */
 
 /* AboutSection end  */
 .about
-    background: $navbarLinkColorHover
-    color: $white
     padding: 10px 15px
 .aboutImg
-    width: 30%
-    height: 30%
+    width: 25%
+    height: 25%
     border-radius: 15%
+    align-self: center
 @media (max-width: 675px)
     .about
         flex-direction: column
@@ -167,8 +174,15 @@ ul li
             font-size: .9rem
     .aboutImg
         align-self: center
-        width: 70%
-        height: 70%
+        width: 50%
+        height: 50%
+        margin-bottom: 15px
+        margin-left: 30px
         
 
 /* AboutSection end  */
+
+/* JumbotronSection 1  */   
+
+
+/* JumbotronSection 1 end  */

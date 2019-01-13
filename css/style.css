@@ -154,7 +154,8 @@ div#navbar3.container {
   width: 100%;
   padding: 0;
   margin: 0;
-  line-height: 0; }
+  line-height: 0;
+  z-index: 99; }
 
 @media (min-width: 550px) {
   div#navbar3.container {
@@ -188,18 +189,18 @@ span {
   font-weight: bold; }
 
 li:hover {
-  background: -moz-linear-gradient(top, #0e6db4 0%, #0f71ba 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0e6db4), color-stop(100%, #0f71ba));
-  background: -webkit-linear-gradient(top, #0e6db4 0%, #0f71ba 100%);
-  background: -o-linear-gradient(top, #0e6db4 0%, #0f71ba 100%);
-  background: -ms-linear-gradient(top, #0e6db4 0%, #0f71ba 100%);
-  background: linear-gradient(to bottom, #0e6db4 0%, #0f71ba 100%); }
+  background: -moz-linear-gradient(top, rgba(14, 109, 180, 0.9) 0%, #0f71ba 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(14, 109, 180, 0.9)), color-stop(100%, #0f71ba));
+  background: -webkit-linear-gradient(top, rgba(14, 109, 180, 0.9) 0%, #0f71ba 100%);
+  background: -o-linear-gradient(top, rgba(14, 109, 180, 0.9) 0%, #0f71ba 100%);
+  background: -ms-linear-gradient(top, rgba(14, 109, 180, 0.9) 0%, #0f71ba 100%);
+  background: linear-gradient(to bottom, rgba(14, 109, 180, 0.9) 0%, #0f71ba 100%); }
 
 a:hover {
   text-decoration: none; }
 
 a:active {
-  background: #0e6db4;
+  background: rgba(14, 109, 180, 0.9);
   list-style: none;
   font-weight: bold; }
 
@@ -274,46 +275,56 @@ a:active {
   transform: rotate(45deg) translate(-8px, -8px); }
 
 /* NavSection end */
-/* JumbotronSection 1  */
+/* JumbotronSection  */
 .jumbotron {
   margin-bottom: 0; }
 
-.jumbo1 {
-  background-image: url("../images/horsePics/horse.jpg");
+.jumbo1, .jumbo2, .jumbo3, .jumbo4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  font-weight: bold;
-  height: 450px;
-  padding-top: 100px; }
+  color: #fff;
+  height: 450px; }
+
+.jumbo1 {
+  background-image: url("../images/horsePics/horse.jpg"); }
+  .jumbo1 a {
+    margin-top: 15%; }
+
+.jumbo2 {
+  background-image: url("../images/horsePics/horse3.jpg");
+  background-position: top; }
+
+.jumbo3 {
+  background-image: url("../images/horsePics/horseKiss.jpg");
+  background-position: top; }
+
+.jumbo4 {
+  background-image: url("../images/horsePics/horse4.jpg");
+  background-position: center; }
 
 .btn {
   background: #0f71ba;
   color: white;
   max-width: 100%; }
 
-@media (max-width: 590px) {
-  .jumbo1 {
+@media (max-width: 1050px) {
+  .jumbo1, .jumbo2 {
     padding-top: 70px; }
 
-  .jumbo1 h1 {
-    font-size: 1.5rem; }
-
-  .jumbo1 p {
-    font-size: 1rem; } }
-/* JumbotronSection 1 end  */
+  .jumbo1 a {
+    margin-top: 25%; } }
+/* JumbotronSection end  */
 /* AboutSection end  */
 .about {
-  background: #0e6db4;
-  color: #fff;
   padding: 10px 15px; }
 
 .aboutImg {
-  width: 30%;
-  height: 30%;
-  border-radius: 15%; }
+  width: 25%;
+  height: 25%;
+  border-radius: 15%;
+  align-self: center; }
 
 @media (max-width: 675px) {
   .about {
@@ -325,8 +336,12 @@ a:active {
 
   .aboutImg {
     align-self: center;
-    width: 70%;
-    height: 70%; } }
+    width: 50%;
+    height: 50%;
+    margin-bottom: 15px;
+    margin-left: 30px; } }
 /* AboutSection end  */
+/* JumbotronSection 1  */
+/* JumbotronSection 1 end  */
 
 /*# sourceMappingURL=style.css.map */
