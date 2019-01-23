@@ -289,8 +289,10 @@ a:active {
 
 .jumbo1 {
   background-image: url("../images/horsePics/horse.jpg"); }
-  .jumbo1 a {
+  .jumbo1 button, .jumbo1 .modal {
     margin-top: 15%; }
+  .jumbo1 #modalBtn {
+    margin-top: 0; }
 
 .jumbo2 {
   background-image: url("../images/horsePics/horse3.jpg");
@@ -305,16 +307,41 @@ a:active {
   background-position: center; }
 
 .btn {
-  background: #0f71ba;
   color: white;
   max-width: 100%; }
 
-@media (max-width: 1050px) {
+@media (min-width: 1050px) {
   .jumbo1, .jumbo2 {
     padding-top: 70px; }
 
   .jumbo1 a {
-    margin-top: 25%; } }
+    margin-top: 25%; }
+
+  #modalBtn {
+    margin-top: 0; }
+
+  .jumbo2 {
+    background-position: center; }
+
+  .jumbo3 {
+    background-position: bottom; } }
+@media (min-width: 1400px) {
+  .jumbo2 {
+    background-position: top; }
+
+  .jumbo3 {
+    background-position: center; } }
+@media (min-width: 1500px) {
+  .jumbo2 {
+    background-position: top; }
+
+  .jumbo3 {
+    background-image: url("../images/horsePics/youngHorse.jpg");
+    background-position: top; }
+
+  .jumbo4 {
+    background-position: center;
+    margin-top: 150px; } }
 /* JumbotronSection end  */
 /* AboutSection end  */
 .about {

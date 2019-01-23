@@ -59,17 +59,38 @@
     
 <!-- jumbotron 1 -->
 <section class="jumbotron text-center jumbo1" id="home">
-  <a class="btn btn-lg mt-6" id="aboutUs" href="#" role="button">Jenni's Equine Massage</a>
+    <!-- MODAL TRIGGER -->
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mission">Jenni's Equine Massage</button>
+
+    <!-- MODAL -->
+    <div class="modal" id="mission">
+      <div class="modal-dialog">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title">Our Mission</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus unde veniam harum magnam molestias dignissimos omnis
+            architecto, quod, obcaecati dolorum debitis dolore porro qui, iusto quo accusantium voluptates pariatur illo.
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-primary" id="modalBtn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
+
 <!-- jumbotron end -->
 
 
   <!-- picture and about section -->
-<section class="d-flex text-center about" >
+<section class="d-flex text-center about" id='aboutUs'>
   <img src="images/horsePics/jenniAndHorse.JPG" alt="jenni and her horse" class="aboutImg mr-4">
   <div class="d-flex flex-column justify-content-around">
-  <h4 class="aboutText">Jenni and her Dream</h4>
-  <p class="aboutText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
+  <h4>Jenni and her Dream</h4>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
   </div>
 </section>
  <!-- picture and about section end -->
@@ -82,8 +103,8 @@
 <!-- Services section --> 
 <section class="d-flex text-center about">
   <div class="d-flex flex-column justify-content-around">
-  <h4 class="xaboutTet">Services</h4>
-  <p class="aboutText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
+  <h4>Services</h4>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
   </div>
 </section>
 <!-- Services section end --> 
@@ -96,8 +117,8 @@
 <!-- Contact section -->
 <section class="d-flex text-center about">
   <div class="d-flex flex-column justify-content-around">
-  <h4 class="xaboutTet">Contact Us</h4>
-  <p class="aboutText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
+  <h4>Contact Us</h4>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat id eveniet, eaque aliquid temporibus minus optio? Harum, fugit unde quasi itaque veniam numquam recusandae. Voluptates ipsam tenetur labore ex nam.</p>
   </div>
 </section>
 <!-- Contact section end -->
@@ -190,15 +211,15 @@
       <div class="col-md-6 mb-md-0 mb-3 align-self-center">
 
        <!-- Facebook -->
-       <a class="fb-ic">
+       <a class="fb-ic" href="https://www.facebook.com/" target="_blank">
           <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
         </a>
         <!--Instagram-->
-        <a class="ins-ic">
+        <a class="ins-ic" href="https://www.instagram.com/" target="_blank">
           <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
         </a>
         <!--Pinterest-->
-        <a class="pin-ic">
+        <a class="pin-ic" href="https://www.pinterest.com/" target="_blank">
           <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
         </a>
 
